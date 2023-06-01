@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <script>
+      async function json() {
+        const res = await axios.post('/api/person/json', {
+          name: '光',
+          age: 20,
+        });
+        console.log(res);
+      }
+      json();
+    </script>
+  </body>
+</html>
